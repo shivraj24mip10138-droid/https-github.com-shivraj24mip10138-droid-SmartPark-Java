@@ -289,46 +289,83 @@ The project follows a modular package structure:
 
 SmartPark-Java/
 │
+
 ├── README.md
+
 ├── statement.md
+
 ├── pom.xml
+
 ├── .gitignore
+
 ├── LICENSE
+
 │
+
 ├── src/
+
 │   ├── main/
+
 │   │   └── java/
+
 │   │       └── smartpark/
+
 │   │           ├── Main.java
+
 │   │           │
+
 │   │           ├── model/
+
 │   │           │   ├── User.java
+
 │   │           │   ├── Vehicle.java
+
 │   │           │   ├── ParkingSlot.java
+
 │   │           │   ├── Reservation.java
+
 │   │           │   └── Payment.java
+
 │   │           │
+
 │   │           ├── service/
+
 │   │           │   ├── UserService.java
+
 │   │           │   ├── ParkingService.java
+
 │   │           │   ├── ReservationService.java
+
 │   │           │   └── PaymentService.java
+
 │   │           │
+
 │   │           └── database/
+
 │   │               └── DatabaseConnection.java
+
 │   │
+
 │   └── test/
+
 │
+
 ├── sql/
+
 │   └── schema.sql
+
 │
+
 └── docs/
+
     └── diagrams/
+
+
 
 This structure separates data models, business logic, and database operations, making the project easier to understand and maintain.
 
 10. Command-Line Interface
-
+    
 SmartPark will be designed to run completely from the terminal.
 
 A sample main menu will be:
