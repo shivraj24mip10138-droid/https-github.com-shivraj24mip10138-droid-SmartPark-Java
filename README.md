@@ -283,8 +283,8 @@ reservation_id
 amount
 payment_method
 payment_status
-9. Java Project Structure
 
+9. Java Project Structure
 The project follows a modular package structure:
 
 SmartPark-Java/
@@ -333,9 +333,7 @@ SmartPark will be designed to run completely from the terminal.
 
 A sample main menu will be:
 
-====================================
-       SMARTPARK MANAGEMENT SYSTEM
-====================================
+  SMARTPARK MANAGEMENT SYSTEM :
 
 1. Register User
 2. Login
@@ -349,20 +347,16 @@ A sample main menu will be:
 10. Exit
 
 Enter your choice:
-
 The user selects an option and provides the required input. The system validates the input, performs the requested operation, and displays the result.
 
 11. Non-Functional Requirements
-11.1 Performance
-
+11.1 Performance:
 The system should process common operations such as searching for available slots and retrieving reservations efficiently.
 
-11.2 Security
-
+11.2 Security:
 User information and database access should be protected using appropriate authentication and controlled database permissions.
 
-11.3 Reliability
-
+11.3 Reliability:
 The system should handle invalid operations and database errors without unexpectedly terminating the application.
 
 11.4 Maintainability
