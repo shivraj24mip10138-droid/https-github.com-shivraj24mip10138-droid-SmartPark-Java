@@ -211,34 +211,34 @@ Git and GitHub are used to manage project versions and maintain the source code 
 
 SmartPark follows a three-layer architecture to keep the project modular and maintainable.
 
-              USER / ADMIN
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │ Presentation Layer  │
-        │    CLI Interface    │
-        └──────────┬──────────┘
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │    Service Layer    │
-        │                     │
-        │ User Service        │
-        │ Parking Service     │
-        │ Reservation Service │
-        │ Payment Service     │
-        └──────────┬──────────┘
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │   Data Access Layer │
-        │      JDBC / DAO     │
-        └──────────┬──────────┘
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │    PostgreSQL DB    │
-        └─────────────────────┘
+            USER / ADMIN
+               │
+               ▼
+    ┌─────────────────────┐
+    │ Presentation Layer  │
+    │    CLI Interface    │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │    Service Layer    │
+    │                     │
+    │ User Service        │
+    │ Parking Service     │
+    │ Reservation Service │
+    │ Payment Service     │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │   Data Access Layer │
+    │      JDBC / DAO     │
+    └──────────┬──────────┘
+               │
+               ▼
+    ┌─────────────────────┐
+    │    PostgreSQL DB    │
+    └─────────────────────┘
 
 7.1 Presentation Layer
 
@@ -312,6 +312,7 @@ payment_status
 The project follows a modular package structure:
 
 SmartPark-Java/
+
 │
 
 ├── README.md
@@ -382,6 +383,7 @@ SmartPark-Java/
 
 └── docs/
 
+    
     └── diagrams/
 
 
