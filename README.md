@@ -1,14 +1,18 @@
 # https-github.com-shivraj24mip10138-droid-SmartPark-Java
 SmartPark is a Java-based Smart Parking Management System that helps users find, reserve, and manage parking slots efficiently. It includes user and vehicle management, smart slot allocation, reservations, automatic fee calculation, payments, and parking analytics using PostgreSQL with a simple command-line interface.
 
+
 SmartPark – Smart Parking Management System
+
 1. Project Overview
 
 SmartPark is a Java-based Smart Parking Management System designed to simplify and automate the management of parking spaces. The system provides a centralized platform through which users can register their vehicles, view available parking slots, reserve suitable spaces, manage reservations, calculate parking charges, record payments, and view parking-related reports.
 
+
 Traditional parking systems often require users to search manually for available spaces, while parking administrators have to maintain records of vehicles, slots, reservations, and payments. These processes can become inefficient as the number of vehicles and parking spaces increases. SmartPark addresses these problems by providing a structured, computerized solution.
 
 The project is developed using Java with PostgreSQL as the database and JDBC for database connectivity. It uses a command-line interface (CLI) so that the complete application can be executed through a terminal without requiring a graphical interface.
+
 
 2. Problem Statement
 
@@ -26,36 +30,44 @@ Increased chances of human errors.
 
 SmartPark aims to solve these problems by providing an organized Java-based system for managing the complete parking process.
 
+
 3. Project Objectives
 
 The main objectives of SmartPark are:
+
 
 3.1 Parking Management
 Maintain information about parking slots.
 Display available and occupied slots.
 Manage different types of parking spaces.
 Update slot status when vehicles enter or leave.
+
 3.2 User and Vehicle Management
 Allow users to register.
 Maintain user information.
 Register vehicles associated with users.
 Provide controlled access to the system.
+
 3.3 Reservation Management
 Allow users to reserve parking slots.
 Prevent invalid or duplicate reservations.
 Allow users to cancel reservations.
 Maintain reservation history.
+
 3.4 Payment Management
 Automatically calculate parking charges.
 Generate parking bills.
 Store payment information.
 Maintain payment history.
+
 3.5 Reporting and Analytics
 Display parking occupancy.
 Show available and occupied spaces.
 Calculate revenue.
 Provide useful parking statistics.
+
 4. Major Functional Modules
+
 4.1 User Management Module
 
 The User Management Module handles user registration and user information.
@@ -66,6 +78,7 @@ User login.
 User information management.
 Vehicle registration.
 User-specific reservation history.
+
 4.2 Parking Slot Management Module
 
 This module manages all parking spaces in the system.
@@ -77,6 +90,7 @@ View available slots.
 View occupied slots.
 Update slot status.
 Identify suitable slots based on vehicle requirements.
+
 4.3 Reservation Management Module
 
 The Reservation Module manages the process of booking parking spaces.
@@ -88,6 +102,7 @@ View reservation details.
 Cancel reservations.
 Maintain reservation status.
 Maintain reservation history.
+
 4.4 Payment and Billing Module
 
 This module handles parking fee calculation and payment records.
@@ -105,6 +120,7 @@ First hour       → ₹30
 Every extra hour → ₹20
 
 The actual rates can be configured according to the project's requirements.
+
 
 4.5 Reports and Analytics Module
 
@@ -129,6 +145,7 @@ Occupancy         : 63%
 Today's Revenue   : ₹4,850
 
 ====================================
+
 5. Smart Slot Allocation
 
 One of the important features of SmartPark is smart parking-slot selection.
@@ -147,6 +164,7 @@ B01 → Accessible
 If an electric vehicle requires parking, the system can prioritize an available EV slot.
 
 This makes the parking allocation process more organized and demonstrates the use of programming logic and data structures in the project.
+
 
 6. Technology Stack
 
@@ -188,6 +206,7 @@ Git and GitHub
 
 Git and GitHub are used to manage project versions and maintain the source code repository.
 
+
 7. System Architecture
 
 SmartPark follows a three-layer architecture to keep the project modular and maintainable.
@@ -220,17 +239,21 @@ SmartPark follows a three-layer architecture to keep the project modular and mai
         ┌─────────────────────┐
         │    PostgreSQL DB    │
         └─────────────────────┘
+
 7.1 Presentation Layer
 
 The presentation layer provides the command-line interface through which users interact with SmartPark.
+
 
 7.2 Service Layer
 
 The service layer contains the main business logic, including parking allocation, reservations, fee calculation, and user operations.
 
+
 7.3 Data Access Layer
 
 The data access layer handles communication between Java and PostgreSQL using JDBC.
+
 
 8. Database Design
 
@@ -283,6 +306,7 @@ reservation_id
 amount
 payment_method
 payment_status
+
 
 9. Java Project Structure
 The project follows a modular package structure:
@@ -364,6 +388,7 @@ SmartPark-Java/
 
 This structure separates data models, business logic, and database operations, making the project easier to understand and maintain.
 
+
 10. Command-Line Interface
     
 SmartPark will be designed to run completely from the terminal.
@@ -386,27 +411,35 @@ A sample main menu will be:
 Enter your choice:
 The user selects an option and provides the required input. The system validates the input, performs the requested operation, and displays the result.
 
+
 11. Non-Functional Requirements
+
 11.1 Performance:
 The system should process common operations such as searching for available slots and retrieving reservations efficiently.
+
 
 11.2 Security:
 User information and database access should be protected using appropriate authentication and controlled database permissions.
 
+
 11.3 Reliability:
 The system should handle invalid operations and database errors without unexpectedly terminating the application.
+
 
 11.4 Maintainability
 
 The project should use separate packages and classes so that individual modules can be modified without affecting the entire system.
 
+
 11.5 Error Handling
 
 The application should validate user inputs and provide meaningful error messages for invalid data.
 
+
 11.6 Scalability
 
 The database and application structure should allow additional parking areas, slots, users, and vehicles to be added in the future.
+
 
 12. Validation and Error Handling
 
@@ -423,6 +456,7 @@ Database connection failures.
 
 Instead of terminating unexpectedly, the system should display a useful message and allow the user to continue.
 
+
 13. Testing
 
 Testing will be performed for individual modules and complete workflows.
@@ -438,33 +472,42 @@ Cancel reservation	Reservation cancelled
 Calculate parking fee	Correct amount displayed
 Make valid payment	Payment recorded
 View report	Correct statistics displayed
+
+
 14. Future Enhancements
 
 The current system can be extended in several ways:
+
 
 14.1 Online Payment
 
 Integration with a payment gateway could allow users to make real payments.
 
+
 14.2 Mobile Application
 
 A mobile application could allow users to reserve parking spaces remotely.
+
 
 14.3 QR Code Parking
 
 QR codes could be used for faster vehicle entry and exit.
 
+
 14.4 IoT Integration
 
 Sensors could automatically detect whether parking spaces are occupied.
+
 
 14.5 Advanced Analytics
 
 Historical parking data could be analyzed to predict peak parking hours and demand.
 
+
 14.6 Electric Vehicle Support
 
 Dedicated EV charging stations could be integrated into the parking management system.
+
 
 15. Project Benefits
 
@@ -479,6 +522,8 @@ Provides useful parking analytics.
 Demonstrates practical Java programming.
 Demonstrates database connectivity using JDBC.
 Provides a modular and maintainable architecture.
+
+
 16. Conclusion
 
 SmartPark – Smart Parking Management System is a Java-based application designed to provide an organized and efficient approach to parking management. The system combines user management, vehicle management, parking-slot allocation, reservations, payment processing, and analytics into a single application.
